@@ -21,6 +21,7 @@ if __name__ == "__main__":
                 for folder in accumulate(stack, lambda x,y: x + "_" + y):
                     if folder not in folder_sizes.keys():
                         folder_sizes[folder] = 0
+            # default dict intead of if
                     value = folder_sizes.get(folder, 0)
                     folder_sizes[folder] += int(parts[0])
     #print(folder_sizes)
